@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head of the document -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" conttent="IE=edge" />
+        <link
+            rel="stylesheet"
+            href="css/bootstrap-icons/font/bootstrap-icons.css"
+        />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Form</title>
+    </head>
+
+    <!-- body of the document -->
+    <body>
+        <!-- header of the body tag -->
+        <header class="container-fluid bg-dark text-white text-center p-3 fs-3">
+            <a href="/" class="text-decoration-none text-white"><span>mysite</span></a>
+        </header>
+        <main>
+            <!-- form to send to the server -->
+            <form method="post" action="/api" id="userForm" class="w-25 mx-auto my-3" autocomplete="off">
+                <div class="container">
+                    <div class="form-floating mb-3">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="username"
+                            name="username"
+                            required
+                        />
+                        <label for="username">Username</label>
+                        <div class="" id="feedbackF"></div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                            required
+                        />
+                        <label for="email">Email</label>
+                        <div class="" id="feedbackE"></div>
+                    </div>
+                    <div class="form-floating">
+                        <input
+                            type="password"
+                            class="form-control"
+                            id="password"
+                            name="password"
+                            required
+                        />
+                        <label for="password">Password</label>
+                        <div class="" id="feedbackP"></div>
+                    </div>
+                    <button
+                        id="submitBtn"
+                        class="btn btn-success w-100 mt-5"
+                        title="Click here to submit the form"
+                    >
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </main>
+
+        <!-- feet of the body tag -->
+        <footer>
+            <div class="icon w-25 mx-auto text-center">
+                <a
+                    href="https:github.com/christomah0/Insert-data-NodeJS"
+                    target="_blank"
+                    ><i class="bi bi-github"></i
+                ></a>
+            </div>
+            <div class="text-center text-muted">&copy;&nbsp;Copyright 2022</div>
+        </footer>
+
+        <!-- just a random script -->
+        <script
+            type="text/javascript"
+            src="js/bootstrap.bundle.min.js"
+        ></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
